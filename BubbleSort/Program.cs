@@ -54,6 +54,24 @@ namespace BubbleSort
             }
             Console.WriteLine("");
         }
+        public void BubbleSortArray()
+        {
+            for (int i = 1; i < n; i++) //for n - 1 passes
+            {
+                //Pada pass i, bandingkan n - i elemn pertama dengan elemen selanjutnya
+                for (int j = 0; j < n; j++)
+                {
+                    if (a[j] > a[j]+1) //Jika elemn tidak dalam urutan yang benar
+                    {
+                        // tukar elemen
+                        int temp;
+                        temp = a[j];
+                        a[j] = a[j+1];
+                        a[j+1] = temp;
+                    }
+                }
+            }
+        }
         static void Main(string[] args)
         {
         }
