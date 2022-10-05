@@ -12,7 +12,7 @@ namespace BubbleSort
         private int[] a = new int[20];
 
         //Deklarasi variabel int untuk menyimpan banyaknya data pada array
-        private int[] n;
+        private int n;
 
         //Fungsi / Method untuk menerima masukan
         public void read()
@@ -26,7 +26,7 @@ namespace BubbleSort
                 if (n <= 20)
                     break;
                 else
-                    Console.WriteLine("\nArray dapat mempunyai maksimal 20 elemen.\n")
+                    Console.WriteLine("\nArray dapat mempunyai maksimal 20 elemen.\n");
             }
             Console.WriteLine("");
             Console.WriteLine("------------------------");
@@ -50,7 +50,7 @@ namespace BubbleSort
             Console.WriteLine("-----------------------------------");
             for (int j = 0; j < n; j++)
             {
-                Console[j] = a[j];
+                Console.WriteLine(a[j]);
             }
             Console.WriteLine("");
         }
