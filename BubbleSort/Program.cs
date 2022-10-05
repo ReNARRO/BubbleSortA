@@ -33,13 +33,26 @@ namespace BubbleSort
             Console.WriteLine(" Masukan elemen array ");
             Console.WriteLine("------------------------");
 
-            //Penguna memasukkan elemn pada array
+            //Penguna memasukkan elemen pada array
             for (int i = 0; i < n; i++)
             {
                 Console.WriteLine("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
                 a[i] = Int32.Parse(s1);
             }
+        }
+        public void display()
+        {
+            //Menampilkan array yang tersusun
+            Console.WriteLine("");
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine(" Element array yang telah tersusun ");
+            Console.WriteLine("-----------------------------------");
+            for (int j = 0; j < n; j++)
+            {
+                Console[j] = a[j];
+            }
+            Console.WriteLine("");
         }
         static void Main(string[] args)
         {
